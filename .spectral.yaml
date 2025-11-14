@@ -1,0 +1,9 @@
+extends:
+  - "spectral:oas"
+rules:
+  no-empty-summaries:
+    description: "Operation summaries must not be empty"
+    given: "$.paths[*][*]"
+    then:
+      field: "summary"
+      function: truthy
