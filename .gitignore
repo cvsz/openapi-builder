@@ -1,4 +1,14 @@
-node_modules
-dist
+```
+# Build artifacts
+dist/
+*.js.map
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment
 .env
-.DS_Store
+.env.local
+*.env.*
+```
